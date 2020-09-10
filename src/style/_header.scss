@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom: 1px solid #2c3e4c;
+
+  nav {
+    button {
+      width: 80px;
+      line-height: 2em;
+      border: 1px solid;
+      border-radius: 2em;
+    }
+    button:first-child {
+      @include btn-variant(#1977b1, transparent, #1977b1);
+    }
+    button:last-child {
+      @include btn-variant(white, #1992db, transparent);
+    }
+  }
+}
