@@ -1,0 +1,12 @@
+.login {
+  @include btn-variant(#1977b1, transparent, #1977b1);
+}
+
+.register {
+  @include btn-variant(white, #1992db, transparent);
+}
+
+.submit {
+  line-height: 2em;
+  border-radius: 2em;
+}

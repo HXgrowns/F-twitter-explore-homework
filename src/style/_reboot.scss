@@ -7,6 +7,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   font-family: $font-family-base;
   font-size: $font-size-base;
   color: $color-base;

@@ -1,2 +1,48 @@
 .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form {
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-base;
+
+    h2 {
+      color: white;
+    }
+
+    input {
+      width: 100%;
+      line-height: 3em;
+    }
+
+    .name-password {
+      color: $color-base;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $border-color;
+    }
+
+    .forget {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      text-align: left;
+      color: $primary-color;
+      font-size: 12px;
+    }
+
+    .login {
+      @extend .login;
+      @extend .submit;
+    }
+
+    .register {
+      @extend .register;
+      @extend .submit;
+    }
+  }
 }

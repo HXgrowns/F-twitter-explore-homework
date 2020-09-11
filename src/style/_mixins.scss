@@ -8,3 +8,9 @@
   border-color: $border-color;
   background-color: $bg-color;
 }
+
+@mixin submit-variant($color, $bg-color, $border-color) {
+  color: $color;
+  border-color: $border-color;
+  background-color: $bg-color;
+}
