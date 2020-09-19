@@ -36,10 +36,15 @@
     }
 
     .login {
+      //TODO feedback: 这里的.login最好换一个名字，因为它和38行的.login重名了，这段代码乍一看，很让人迷惑
+      // 然后我看了一下，@extend .login是来自于_extends.scss里面的.login, 但是_extends.scss里面的.login实际上是@include btn-variant()。
+      // 那么为什么38行的.login不直接@include btn-variant()呢？
       @extend .login;
+      // TODO feedback: 这里也不应该是@extend .submit, 而应该是@include. 可以去了解一下@extend和@include的使用场景和差别
       @extend .submit;
     }
 
+    // TODO feedback: 和上面.login同意的问题
     .register {
       @extend .register;
       @extend .submit;
